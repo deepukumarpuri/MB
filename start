@@ -1,9 +1,9 @@
 #!/bin/bash
     
-apt update && apt upgrade -y
-apt install git -y
-pip3 install -U pip
+echo "Cloning Custom Repo from https://github.com/deepukumarpuri/JORANA "
 git clone https://github.com/deepukumarpuri/JORANA /JORANA
+fi
 cd /JORANA
 pip3 install -U -r requirements.txt
+echo "Starting Bot...."
 python3 main.py
